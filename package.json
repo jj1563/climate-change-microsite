@@ -1,0 +1,16 @@
+{
+  "name": "climate-action-pledge",
+  "version": "1.0.0",
+  "description": "Climate Action Pledge Microsite - A responsive platform for taking climate commitments",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["climate", "pledge", "sustainability", "environment"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

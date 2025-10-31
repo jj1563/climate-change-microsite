@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Take the Climate Action Pledge - Join millions in making sustainable choices for our planet">
+  <title>Climate Action Pledge | Be Cool Enough to Care</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">The Pledge</h1>
+        <div class="pledge-text">
+          <p>I pledge to care for the Earth that sustains me.</p>
+          <p>I will choose actions that heal instead of harm, and live with awareness in every decision.</p>
+          <p>I will reduce waste, protect nature, and inspire others through example.</p>
+          <p>Change begins small, but together our choices can rewrite the story of tomorrow.</p>
+          <p>For the air we breathe, the water we share, and the generations yet to come —</p>
+          <p>I pledge to do my part, starting now.</p>
+        </div>
+        <button class="cta-button" onclick="scrollToPledgeForm()">Take the Pledge</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live KPIs Section -->
+  <section id="kpis" class="kpis-section">
+    <div class="container">
+      <h2 class="section-title">Our Growing Movement</h2>
+      <div class="kpis-grid">
+        <div class="kpi-card">
+          <div class="kpi-value" id="kpi-target">1,000,000</div>
+          <div class="kpi-label">Target Pledges</div>
+        </div>
+        <div class="kpi-card highlight">
+          <div class="kpi-value" id="kpi-achieved">0</div>
+          <div class="kpi-label">Pledges Taken</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-value" id="kpi-students">0</div>
+          <div class="kpi-label">Students</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-value" id="kpi-professionals">0</div>
+          <div class="kpi-label">Working Professionals</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Take Action Section -->
+  <section id="why" class="why-section">
+    <div class="container">
+      <h2 class="section-title">Why Take Climate Action</h2>
+      <div class="impact-statement">
+        <p>Every change begins with one person deciding they can't stay passive anymore.</p>
+        <p>Switching off a light, saying no to plastic, walking instead of driving — it all adds up.</p>
+        <p>When millions take these small steps together, we become a global movement powerful enough to restore balance to our planet.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pledge Form Section -->
+  <section id="pledge" class="pledge-form-section">
+    <div class="container">
+      <h2 class="section-title">Make Your Commitment</h2>
+      
+      <form id="pledgeForm" class="pledge-form">
+        
+        <!-- Personal Information -->
+        <div class="form-group">
+          <label for="name">Full Name <span class="required">*</span></label>
+          <input type="text" id="name" name="name" required placeholder="Enter your full name">
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email Address <span class="required">*</span></label>
+            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+          </div>
+
+          <div class="form-group">
+            <label for="mobile">Mobile Number <span class="required">*</span></label>
+            <input type="tel" id="mobile" name="mobile" required placeholder="10-digit number">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="state">State</label>
+            <select id="state" name="state">
+              <option value="">Select your state</option>
+              <option value="Andhra Pradesh">Andhra Pradesh</option>
+              <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+              <option value="Assam">Assam</option>
+              <option value="Bihar">Bihar</option>
+              <option value="Chhattisgarh">Chhattisgarh</option>
+              <option value="Goa">Goa</option>
+              <option value="Gujarat">Gujarat</option>
+              <option value="Haryana">Haryana</option>
+              <option value="Himachal Pradesh">Himachal Pradesh</option>
+              <option value="Jharkhand">Jharkhand</option>
+              <option value="Karnataka">Karnataka</option>
+              <option value="Kerala">Kerala</option>
+              <option value="Madhya Pradesh">Madhya Pradesh</option>
+              <option value="Maharashtra">Maharashtra</option>
+              <option value="Manipur">Manipur</option>
+              <option value="Meghalaya">Meghalaya</option>
+              <option value="Mizoram">Mizoram</option>
+              <option value="Nagaland">Nagaland</option>
+              <option value="Odisha">Odisha</option>
+              <option value="Punjab">Punjab</option>
+              <option value="Rajasthan">Rajasthan</option>
+              <option value="Sikkim">Sikkim</option>
+              <option value="Tamil Nadu">Tamil Nadu</option>
+              <option value="Telangana">Telangana</option>
+              <option value="Tripura">Tripura</option>
+              <option value="Uttar Pradesh">Uttar Pradesh</option>
+              <option value="Uttarakhand">Uttarakhand</option>
+              <option value="West Bengal">West Bengal</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="profileType">Profile Type <span class="required">*</span></label>
+            <select id="profileType" name="profileType" required>
+              <option value="">Select your profile</option>
+              <option value="student">Student</option>
+              <option value="working">Working Professional</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Commitment Themes -->
+        <div class="commitments-section">
+          <h3 class="commitments-title">Select Your Commitments</h3>
+          <p class="commitments-subtitle">Choose the actions you'll commit to. The more you choose, the higher your planet love rating.</p>
+
+          <!-- Theme 1: Everyday Eco-Habits -->
+          <div class="theme-group">
+            <div class="theme-header">
+              <h4 class="theme-title">Everyday Eco-Habits</h4>
+              <p class="theme-tagline">Small acts that matter every day</p>
+            </div>
+            <div class="checkboxes">
+              <label class="checkbox-label">
+                <input type="checkbox" name="commitments" value="eco-lights">
+                <span>I will switch off lights and unplug devices when not in use</span>
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="commitments" value="eco-reusable">
+                <span>I will carry reusable bottles, cups, and bags instead of using single-use plastic</span>
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="commitments" value="eco-transport">
+                <span>I will prefer walking, cycling, or public transport over private vehicles</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Theme 2: Conscious Living -->
+          <div class="theme-group">
+            <div class="theme-header">
+              <h4 class="theme-title">Conscious Living</h4>
+              <p class="theme-tagline">Less waste, more awareness</p>
+            </div>
+            <div class="checkboxes">
+              <label class="checkbox-label">
+                <input type="checkbox" name="commitments" value="conscious-buy">
+                <span>I will buy only what I truly need and support sustainable local products</span>
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="commitments" value="conscious-reuse">
+                <span>I will repair, reuse, or donate before I throw anything away</span>
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="commitments" value="conscious-influence">
+                <span>I will influence one person to adopt at least one eco-friendly habit</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Theme 3: Nature Guardian -->
+          <div class="theme-group">
+            <div class="theme-header">
+              <h4 class="theme-title">Nature Guardian</h4>
+              <p class="theme-tagline">Protect what protects us</p>
+            </div>
+            <div class="checkboxes">
+              <label class="checkbox-label">
+                <input type="checkbox" name="commitments" value="nature-tree">
+                <span>I will plant or care for at least one tree this year</span>
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="commitments" value="nature-water">
+                <span>I will save water and avoid polluting local water sources</span>
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="commitments" value="nature-green">
+                <span>I will respect and protect green spaces in my community</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Privacy Note -->
+        <div class="privacy-note">
+          <p><strong>Privacy Notice:</strong> Your mobile number and email are required for validation but will never be displayed publicly. This information is used solely for verification and engagement purposes.</p>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="submit-button">Submit My Pledge</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Certificate Modal -->
+  <div id="certificateModal" class="modal">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeCertificate()">&times;</button>
+      <div id="certificateContainer" class="certificate-container">
+        <!-- Certificate will be generated here -->
+      </div>
+      <div class="certificate-actions">
+        <button class="btn-secondary" onclick="downloadCertificate()">Download Certificate</button>
+        <button class="btn-secondary" onclick="shareCertificate()">Share</button>
+        <button class="btn-primary" onclick="closeCertificate()">View Pledge Wall</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pledge Wall Section -->
+  <section id="pledge-wall" class="pledge-wall-section">
+    <div class="container">
+      <h2 class="section-title">Community Pledge Wall</h2>
+      
+      <!-- Live Ticker -->
+      <div class="ticker-container">
+        <div id="pledgeTicker" class="pledge-ticker">
+          <!-- Ticker items will be dynamically added -->
+        </div>
+      </div>
+
+      <!-- Interactive India Map -->
+      <div class="map-section">
+        <h3 class="subsection-title">Pledges Across India</h3>
+        <div id="indiaMap" class="india-map">
+          <!-- Map will be rendered here -->
+        </div>
+        <div id="stateInfo" class="state-info"></div>
+      </div>
+
+      <!-- Pledge Cards Grid -->
+      <div class="pledges-grid" id="pledgesGrid">
+        <!-- Pledge cards will be dynamically added -->
+      </div>
+
+      <!-- Achievement Badges Section -->
+      <div class="badges-section">
+        <h3 class="subsection-title">Your Achievements</h3>
+        <div id="badgesContainer" class="badges-container">
+          <!-- Badges will be shown based on user activity -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer with Privacy -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <h3>Data Privacy Commitment</h3>
+        <p>We take your privacy seriously. Your email address and mobile number are collected for validation and communication purposes only. This information is never shared publicly on our Pledge Wall or with third parties. We store data securely and use it solely to verify pledges and send you updates about the climate action community.</p>
+        <p class="footer-note">Together, we can make a difference. One pledge at a time.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript Files -->
+  <script src="js/data.js"></script>
+  <script src="js/certificate.js"></script>
+  <script src="js/pledgeWall.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
